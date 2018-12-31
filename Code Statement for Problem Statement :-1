@@ -1,0 +1,13 @@
+#importing numpy library
+import numpy as np
+#Vandermonde matrix calculation function
+def AlexandreTheophileVandermonde(list_1,N): 
+    x = np.array(list_1)
+    output_matrix = np.vander(x, N)
+    print(output_matrix)
+#1-D input array
+list_2 = [1,2,3,5]
+#Number of columns in the output
+N = int(input("Enter the number of columns in the matrix:-"))
+#calling the function
+AlexandreTheophileVandermonde(list_2,N)
